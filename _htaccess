@@ -1,0 +1,19 @@
+
+RewriteEngine On
+RewriteBase /5/flashyflyers/
+RewriteRule ^p/([\[\]=,\?&@~\{\}\+'\.*!™`A-Za-z0-9_-]+)$ flyer-details.php?productId=$1
+
+
+# BEGIN WordPress
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /5/flashyflyers/
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /5/flashyflyers/wordpress/index.php [L]
+</IfModule>
+
+
+#php_value post_max_size 1024M
+# END WordPress

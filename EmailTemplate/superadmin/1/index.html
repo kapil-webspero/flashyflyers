@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Dashboard | Flashy Flyers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/sorter.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-desktop">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                <div class="ml-sm-auto cart-mobile">
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-num">4</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Flyer Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown account-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="account-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Account
+												</button>
+                        <div class="dropdown-menu" aria-labelledby="account-btn">
+                            <a class="dropdown-item" href="#">Downloads</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <div class="cart-desktop">
+                        <div class="cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-num">4</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-wrap">
+        <div class="container">
+            <div class="main-content bx-shadow">
+
+                <section>
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="dash-col-1">
+                                <h2>Good morning <strong>David</strong></h2>
+                                <div class="row">
+                                    <div class="col-md-8 dash-login-col">
+                                        <p class="mt-4"><strong>Last login:</strong> <br> 6/23/2018 6:06am</p>
+                                        <p class="mt-4"><strong>Your profile:</strong><br><a href="#">Click here to view
+                                            </a></p>
+                                    </div>
+                                    <div class="col-md-4 dash-login-col">
+                                        <img src="images/date-big.png" width="70" alt="">
+                                        <h1><strong>7:57am</strong></h1>
+                                        <h3><strong>Monday,</strong> <br> Aug 18, 2018</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-lg-0 mt-4">
+                            <div class="dash-col-2">
+                                <h2 class="mb-4">Sales by <strong>categories</strong></h2>
+                                <div class="d-flex align-items-center">
+                                    <div class="pie-container">
+                                        <canvas id="doughnut-chart"></canvas>
+                                    </div>
+                                    <div id="chart-legend"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="dash-stats-row">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mt-4">
+                            <div class="dash-stats">
+                                <p>Total orders</p>
+                                <h2>19,720</h2><span>products</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4">
+                            <div class="dash-stats">
+                                <p>Total sales</p>
+                                <h2>$88,712 </h2><span>USD</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4">
+                            <div class="dash-stats">
+                                <p>New orders</p>
+                                <h2>116 </h2><span>orders</span>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mt-4">
+                            <div class="dash-stats">
+                                <p>Total clients</p>
+                                <h2>1167 </h2><span>customers</span>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row justify-content-center">
+                        <div class="col-lg-6 col-md-6">
+                            <div class="graph-box blue mt-4">
+                                <p>FLYER SALES</p>
+                                <h3>475 <span>flyers</span> </h3>
+                                <small>130% more than last week
+                                </small>
+                                <canvas id="sales-graph"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="graph-box red mt-4">
+                                <p>ANIMATED FLYERS</p>
+                                <h3>123 <span>animated flyers</span> </h3>
+                                <small>5% more than last week
+                                </small>
+                                <canvas id="animated-flyer-graph"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="graph-box green mt-4">
+                                <p>MOTION FLYERS</p>
+                                <h3>213 <span>motion flyers</span> </h3>
+                                <small>9% more than last week
+                                </small>
+                                <canvas id="motion-flyer-graph"></canvas>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6">
+                            <div class="graph-box purple mt-4">
+                                <p>OTHER PRODUCTS</p>
+                                <h3>511 <span>products</span> </h3>
+                                <small>22% more than last week
+                                </small>
+                                <canvas id="other-products-graph"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="row mt-3">
+                        <div class="col-lg-5 mt-5 product-sales">
+                            <h4 class="blue mb-4"> Product sales rank
+                            </h4>
+                            <div class="ol-wrap">
+                                <ol>
+                                    <li><span class="li-num">#1</span>Night Club template 1 <span class="red">(1119 sales, $45,097)</span></li>
+                                    <li><span class="li-num">#2</span>DJ Logo Promo Animated <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#3</span>Night Club template 13 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#4</span>Laptop skin #12 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#5</span>Night Club template 5 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#6</span>Night Club template 1 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#7</span>DJ Logo Promo <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#8</span>Night Club template 13 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#9</span>Laptop skin #12 <span class="red">(1119 sales, $45,097)</li>
+                                    <li><span class="li-num">#10</span>Night Club template 5 <span class="red">(1119 sales, $45,097)</li>
+                                </ol>
+                            </div>
+                        </div>
+                        <div class="col-lg-7 mt-5 recent-ord">
+                            <h4 class="blue mb-3"> Recent orders
+                            </h4>
+                            <div class="table-responsive">
+                                <table class="table table-2">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Date</th>
+                                            <th>$$</th>
+                                            <th>Product</th>
+                                            <th>Client</th>
+                                            <th>Status</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                                                                        
+                                        <tr>
+                                            <td>426</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Facebook Cvr</td>
+                                            <td>Tim Holland</td>
+                                            <td class="complete">Complete</td>
+                                        </tr>
+                                        <tr>
+                                            <td>427</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Laptop skin#2        </td>
+                                            <td>Ben Hilfiger           </td>
+                                            <td class="inprogress">In progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>428</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Flyer/Animated      </td>
+                                            <td>Yolanda Reyma</td>
+                                            <td class="complete">Complete</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td>429</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>CD Cover+</td>
+                                            <td>Bobo Thomas</td>
+                                            <td class="inprogress">In progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>430</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Flyer                           </td>
+                                            <td>Marsha Tyrese</td>
+                                            <td class="complete">Complete</td>
+                                        </tr>
+                                        <tr>
+                                            <td>431</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Flyer/Animated      </td>
+                                            <td>Marsha Tyrese</td>
+                                            <td class="inprogress">In progress</td>
+                                        </tr>
+                                        <tr>
+                                            <td>432</td>
+                                            <td>6/15/2018 </td>
+                                            <td>$65</td>
+                                            <td>Flyer                           </td>
+                                            <td>Marsha Tyrese</td>
+                                            <td class="complete">Complete</td>
+                                        </tr>                    
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section>
+                    <div class="row">
+                        <div class="col-lg-6 mt-5 recent-customer">
+                            <h4 class="blue mb-3"> RECENT CUSTOMERS
+                            </h4>
+                            <div class="table-responsive">
+                                <table class="table table-2">
+                                    <thead>
+                                        <tr>
+                                            <th>Customer</th>
+                                            <th>Email</th>
+                                            <th>Join date</th>
+                                            <th>State</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>                                      
+                                            <td>Tim Holland  </td>
+                                            <td>timmie24@aol.com </td>
+                                            <td>6/15/2018 </td>
+                                            <td>SC</td>
+                                        </tr>
+                                        <tr>                                      
+                                                <td>Ben Hilfiger                      </td>
+                                                <td>benjiebf@Hotmail.com </td>
+                                                <td>6/15/2018 </td>
+                                                <td>SC</td>
+                                            </tr>
+                                            <tr>                                      
+                                                    <td>Fayda Reyma                  </td>
+                                                    <td>yolonda@gmail.com </td>
+                                                    <td>6/15/2018 </td>
+                                                    <td>SC</td>
+                                                </tr>
+                                                <tr>                                      
+                                                        <td>Bobo Thomas                  </td>
+                                                        <td>bobo1989@yahoo.com   </td>
+                                                        <td>6/15/2018 </td>
+                                                        <td>SC</td>
+                                                    </tr>
+                                                    <tr>                                      
+                                                            <td>Yolanda Reyma </td>
+                                                            <td> yolonda@gmail.com </td>
+                                                            <td>6/15/2018 </td>
+                                                            <td>SC</td>
+                                                        </tr>
+                                                        <tr>                                      
+                                                                <td>Bobo Thomas   </td>
+                                                                <td>bobo1989@yahoo.com </td>
+                                                                <td>6/15/2018 </td>
+                                                                <td>SC</td>
+                                                            </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 mt-5 prd-week">
+                            <h4 class="blue mb-4 text-center">Product of the week</h4>
+                            <div class="top-week-prd text-center">
+                                <span class="num">#1</span>Night club template 1 <span class="prd-stats">(118 sales,$4097)</span>
+                                        <figure class="mt-3 mb-3">
+                                            <img src="images/top-sale.jpg" class="img-fluid" alt="">
+                                        </figure>
+                                        <a href="#" class="btn-lg form-btn-grad">view sales</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </section>
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo text-center mb-5">
+                <a href="index.html"><img src="images/footer-logo.png" class="img-fluid" alt=""></a>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>More information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Freelancing Blog</a></li>
+                        <li><a href="#">Free Flyer Templates</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 footer-lists categories mb-4">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">All Flyer Templates</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Business Flyers</a></li>
+                        <li><a href="#">Church Flyers</a></li>
+                        <li><a href="#">Club Flyers</a></li>
+                        <li><a href="#">Community Flyers</a></li>
+                        <li><a href="#">Free Flyers</a></li>
+                        <li><a href="#">Seasonal Flyers</a></li>
+                        <li><a href="#">Special Event Flyers</a></li>
+                        <li><a href="#">Sports Flyers</a></li>
+                        <li><a href="#">Vintage Flyer Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">F.A.Qs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">File Requirements</a></li>
+                        <li><a href="#">File Licenses</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="socket mt-5">
+
+                <div class="social-links mb-3">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <p id="copyright">Copyright &copy; 2018 All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/Chart.min.js"></script>
+    <script src="js/home-charts.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

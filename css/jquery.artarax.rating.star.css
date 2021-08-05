@@ -1,0 +1,48 @@
+﻿.rating-star{
+
+}
+.ReviewForm  .rating-star span{
+	   background-image:url("../images/star-rate-order.png");
+	       display: inline-block;
+    float: none;
+}
+.ReviewForm .ReviewListingBlock .rating_star_review span{   background-image:url("../images/star-rate-order.png");}
+.ReviewForm .ReviewListingBlock{ background:none !important; border-radius:5px;}
+.ReviewForm  .form-group textarea,.ReviewForm  .form-group textarea:focus{height: 120px; font-weight:bold;
+    background: transparent;
+    color: #fff;
+    border-color: #fff;}
+.rating-star span{
+    width:30px;
+    height:30px;
+    display:block;
+    float:left;
+    background-image:url("../images/star-rate.png");
+    background-repeat:no-repeat;
+    background-size:100%;
+    margin:0px 2px;
+    cursor:pointer;
+    background-position:top;
+  }
+
+  .rating-star span.clicked,.rating-star span.hover{
+    background-position:bottom;
+  }
+.ReviewForm  .ReviewDate{ font-size:14px !important; position:relative; top:4px; color:#fff !important; margin-left:0px !important;}
+.ReviewForm  .ReviewContent{ color:#FFF;}
+.ReviewForm  .ReviewDate span{ font-size:14px !important; position:relative; top:4px; color:#fff !important; margin-left:0px !important;}
+.ReviewForm  .ReviewContent{ margin-top:5px;}
+
+
+.ReviewForm textarea::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #fff;
+  opacity: 1; /* Firefox */
+}
+
+.ReviewForm textarea:-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #fff;
+}
+
+.ReviewForm textarea::-ms-input-placeholder { /* Microsoft Edge */
+  color: #fff;
+}

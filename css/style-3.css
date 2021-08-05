@@ -1,0 +1,65 @@
+.timerDigitsPoint {
+	position: absolute;
+	top: 20px;
+	left: 0;
+}  
+.digitWiseCount {
+    display: inline-block;
+}
+.timerLabel {
+    display: block;
+    padding: 0 5px;
+    font-size: 14px;
+}
+.MyWorkPage .orders-table tr td:nth-child(5) span {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.time-cell.timer-second {
+	position: relative;
+}
+.timer-minute {
+	position: relative;
+}
+
+.discount-block input#coupon {
+    width: auto;
+    height: 40px;
+}
+.discount-block a {
+    width: auto;
+    font-size: 13px;
+    height: 40px;
+    padding-top: 0;
+    line-height: 40px;
+}
+.discount-code .goodpad {
+    color: rgba(32,32,32,.8);
+    font-size: 20px;
+    margin-bottom: 4px;
+    display: inline-block;
+}
+@media screen and (max-width: 640px) {
+.Checkoupage .discount-code {
+	text-align: left !important;
+}
+
+}
+@media screen and (max-width: 470px) {
+   .discount-block input#coupon {
+	width: 100%;
+} 
+.discount-block {
+	text-align: center;
+}
+.discount-code .goodpad {
+	font-size: 15px;
+}
+.discount-code {
+	margin-top: -50px;
+}
+.total-price {
+	font-size: 15px;
+}
+}

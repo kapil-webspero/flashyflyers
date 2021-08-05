@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Discount | Flashy Flyers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/sorter.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-desktop">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                <div class="ml-sm-auto cart-mobile">
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-num">4</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Flyer Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown account-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="account-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Account
+												</button>
+                        <div class="dropdown-menu" aria-labelledby="account-btn">
+                            <a class="dropdown-item" href="#">Downloads</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <div class="cart-desktop">
+                        <div class="cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-num">4</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-wrap">
+        <div class="container">
+            <div class="main-content bx-shadow pl-60 pr-60">
+                <h1 class="page-heading mb-4">Discount Codes</h1>   
+
+                <h2 class="pl-md-3">Create Discount</h2>
+                <form action="" class="form-row mt-4 discount-form">
+                    <div class="col-md-6 px-md-5">
+                        <label>Discount name</label>
+                        <input type="text" class="form-control mb-4">
+                    </div>
+                    <div class="col-md-6 px-md-5">
+                        <label>Discount type</label>
+                        <select name="" class="form-control mb-4" id="">
+                            <option value="">Discount type</option>
+                            <option value="">Type 1</option>
+                            <option value="">Type 2</option>
+                        </select>
+                    </div>
+                    <div class="col-md-6 px-md-5">
+                        <label>Amount off</label>
+                        <input type="text" class="form-control mb-4">
+                    </div>
+                    <div class="w-50"></div>
+                    <div class="col-md-6 px-md-5">
+                        <label>Start date</label>
+                        <input type="text" class="form-control date-field mb-4" data-toggle="datepicker">
+                    </div>
+                    <div class="col-md-6 px-md-5">
+                        <label>Expiry date</label>
+                        <input type="text" class="form-control date-field mb-4" data-toggle="datepicker">
+                    </div>
+                    <div class="col-sm-4 ml-auto px-md-5">
+                        <button type="submit" class="form-btn-grad btn-lg btn-block">Create</button>
+                    </div>
+                </form>
+                <hr>
+                <h2 class="pl-md-3">Current discounts</h2>
+                <form action="" class="top-search-options px-lg-5 my-4 form-row">
+                    <div class="col-lg-2 col-md-2">
+                        <button type="button" class="form-btn-grad btn-lg btn-block mb-3">Reset</button>
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <input type="text" class="form-control mb-3" placeholder="Discount name">
+                    </div>
+                    <div class="col-lg-4 col-md-5">
+                        <input type="text" placeholder="Create date" class="form-control date-field mb-4" data-toggle="datepicker">
+                    </div>
+                    <div class="col-lg-2 col-md-4 ml-auto">
+                        <button type="submit" class="form-btn-grad btn-lg btn-block">Search</button>
+                    </div>
+                </form>
+
+                <div class="table-responsive px-lg-5">
+                    <table class="table sorting  data-table table-1" id="discounts-table">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Created</th>
+                                <th>Name</th>
+                                <th>Type</th>
+                                <th>Amount</th>
+                                <th>Start</th>
+                                <th>Expire</th>
+                                <th>Action</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="data-id">
+                                        <span>1</span>
+                                    </td>
+                                    <td>10/25/2018
+                                        3:33p
+                                    </td>
+                                    <td>Nieuwe ledenkorting
+                                    </td>
+                                    <td>Fixed</td>
+                                    <td>€5</td>
+                                    <td>11/1/2018</td>
+                                    <td>1/1/2019</td>
+                                    <td><button type="button"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="data-id">
+                                        <span>2</span>
+                                    </td>
+                                    <td>10/25/2018
+                                        3:33p
+                                    </td>
+                                    <td>Nieuwe ledenkorting
+                                    </td>
+                                    <td>Percent</td>
+                                    <td>5%
+                                    </td>
+                                    <td>11/1/2018</td>
+                                    <td>-</td>
+                                    <td><button type="button"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                                <tr>
+                                    <td class="data-id">
+                                        <span>3</span>
+                                    </td>
+                                    <td>10/25/2018
+                                        3:33p
+                                    </td>
+                                    <td>Nieuwe ledenkorting
+                                    </td>
+                                    <td>Fixed</td>
+                                    <td>€5</td>
+                                    <td>11/1/2018</td>
+                                    <td>1/1/2019</td>
+                                    <td><button type="button"><i class="fas fa-trash-alt"></i></button></td>
+                                </tr>
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo text-center mb-5">
+                <a href="index.html"><img src="images/footer-logo.png" class="img-fluid" alt=""></a>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>More information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Freelancing Blog</a></li>
+                        <li><a href="#">Free Flyer Templates</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 footer-lists categories mb-4">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">All Flyer Templates</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Business Flyers</a></li>
+                        <li><a href="#">Church Flyers</a></li>
+                        <li><a href="#">Club Flyers</a></li>
+                        <li><a href="#">Community Flyers</a></li>
+                        <li><a href="#">Free Flyers</a></li>
+                        <li><a href="#">Seasonal Flyers</a></li>
+                        <li><a href="#">Special Event Flyers</a></li>
+                        <li><a href="#">Sports Flyers</a></li>
+                        <li><a href="#">Vintage Flyer Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">F.A.Qs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">File Requirements</a></li>
+                        <li><a href="#">File Licenses</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="socket mt-5">
+
+                <div class="social-links mb-3">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <p id="copyright">Copyright &copy; 2018 All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div class="modal fade" id="contactuser" tabindex="-1" role="dialog" aria-labelledby="contactuser" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="exampleModalLabel">Contact user</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form>
+                  <input type="text" class="form-control" placeholder="Email">
+                  <textarea name="" id="" class="form-control" placeholder="Message"></textarea>
+                  <button type="submit" class="form-btn-grad btn-lg btn-block w-50">Submit</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/script.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('[data-toggle="datepicker"]').datepicker({
+                autoHide: true,
+                zIndex: 4048,
+            });
+
+            $("#discounts-table").tablesorter({
+                headers: {
+                    1: {
+                        sorter: false
+                    },
+                    2: {
+                        sorter: false
+                    },
+                    4: {
+                        sorter: false
+                    },
+                    5: {
+                        sorter: false
+                    },
+                    6: {
+                        sorter: false
+                    },
+                    7: {
+                        sorter: false
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>

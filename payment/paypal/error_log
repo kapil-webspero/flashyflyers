@@ -1,0 +1,8 @@
+[01-Aug-2018 10:28:47 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 27
+[01-Aug-2018 10:32:27 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 32
+[01-Aug-2018 10:33:02 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 32
+[01-Aug-2018 10:33:56 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 36
+[01-Aug-2018 10:34:33 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 36
+[01-Aug-2018 10:35:07 UTC] PHP Parse error:  syntax error, unexpected '\' (T_NS_SEPARATOR) in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 38
+[01-Aug-2018 10:37:48 UTC] PHP Notice:  curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 31
+[01-Aug-2018 10:38:46 UTC] PHP Notice:  curl_setopt(): CURLOPT_SSL_VERIFYHOST no longer accepts the value 1, value 2 will be used instead in /home/myoptimabranding/public_html/5/FlashyFlyers/Developer/payment/paypal/payment-listener.php on line 31

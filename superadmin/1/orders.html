@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Orders | Flashy Flyers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/sorter.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-desktop">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                <div class="ml-sm-auto cart-mobile">
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-num">4</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Flyer Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown account-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="account-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Account
+												</button>
+                        <div class="dropdown-menu" aria-labelledby="account-btn">
+                            <a class="dropdown-item" href="#">Downloads</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <div class="cart-desktop">
+                        <div class="cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-num">4</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-wrap">
+        <div class="container">
+            <div class="main-content pl-60 pr-60 bx-shadow">
+                <section class="orders-top mb-4">
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box red">
+                                <h1>25</h1>
+                                <p>new orders</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box cyan">
+                                <h1>31</h1>
+                                <p>in progress</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box purple">
+                                <h1>27</h1>
+                                <p>completed this week</p>
+
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box blue">
+                                <h1>1576</h1>
+                                <p>this year</p>
+
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <h1 class="page-heading mb-4">Orders (99)</h1>
+                <form action="" class="top-search-options mb-5">
+                    <div class="d-flex justify-content-stretch flex-wrap">
+                        <div class="w-lg-20 w-100">
+                            <a href="#" class="btn-lg btn-block form-btn-grad">view all</a>
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+                                    <option value="">product type</option>
+                                    <option value="">product type 1</option>
+                                    <option value="">product type 2</option>
+                                    <option value="">product type 3</option>
+                                    <option value="">product type 4</option>
+                                    <option value="">product type 5</option>
+                                    <option value="">product type 6</option>
+                                    <option value="">product type 7</option>
+                                    <option value="">product type 8</option>
+                                    <option value="">product type 9</option>
+                                    <option value="">product type 10</option>
+                                </select>
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control" placeholder="customer names">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="email" class="form-control" placeholder="customer email">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control" placeholder="order #">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+                                            <option value="">product name</option>
+                                            <option value="">product 1</option>
+                                            <option value="">product 2</option>
+                                            <option value="">product 3</option>
+                                            <option value="">product 4</option>
+                                            <option value="">product 5</option>
+                                            <option value="">product 6</option>
+                                            <option value="">product 7</option>
+                                        </select>
+
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+                                <option value="">assigned to</option>
+                                <option value="">designer 1</option>
+                                <option value="">designer 2</option>
+                                <option value="">designer 3</option>
+                                <option value="">designer 4</option>
+                                <option value="">designer 5</option>
+                                <option value="">designer 6</option>
+                                <option value="">designer 7</option>
+                            </select>
+                        </div>
+
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control date-field" readonly data-toggle="datepicker" placeholder="started on">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control date-field" readonly data-toggle="datepicker" placeholder="ended on">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+                                    <option value="">status</option>
+                                    <option value="">status 1</option>
+                                    <option value="">status 2</option>
+                                    <option value="">status 3</option>
+                                </select>
+                        </div>
+                        <div class="col-lg-5 ml-auto">
+                            <button type="submit" class="form-btn-grad btn-lg btn-block">Search</button>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="table-responsive">
+                    <table class="table sorting orders-table table-1">
+                        <thead>
+                            <tr>
+                                <th scope="col">Order#</th>
+                                <th scope="col">Order date</th>
+                                <th scope="col">Customer</th>
+                                <th scope="col">Assigned to</th>
+                                <th scope="col">Product</th>
+                                <th scope="col">Status</th>
+                                <th scope="col">Action</th>
+                            </tr>
+                            <tbody>
+                                <tr>
+                                    <td class="data-id"><span>979</span></td>
+                                    <td>Dec 18, 2001 9:12 AM</td>
+                                    <td>Tim Holland timmie24@aol.com
+                                    </td>
+                                    <td>Sam Johnson Dec 18, 2001 9:12 AM
+                                    </td>
+                                    <td>Flyer/Animated flyer/Facebook c…
+                                    </td>
+                                    <td class="data-progress">In progress</td>
+                                    <td class="data-view"><a href="#" class="view">view</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="data-id"><span>980</span></td>
+                                    <td>Dec 18, 2001 9:12 AM</td>
+                                    <td>Tim Holland timmie24@aol.com
+                                    </td>
+                                    <td>Sam Johnson Dec 18, 2001 9:12 AM
+                                    </td>
+                                    <td>Flyer/Animated flyer/Facebook c…
+                                    </td>
+                                    <td class="data-new">new</td>
+                                    <td class="data-view"> <a href="#" class="assign">assign</a> <a href="#" class="view">view</a></td>
+                                </tr>
+
+                                <tr>
+                                    <td class="data-id"><span>981</span></td>
+                                    <td>Dec 18, 2001 9:12 AM</td>
+                                    <td>Tim Holland timmie24@aol.com
+                                    </td>
+                                    <td>Sam Johnson Dec 18, 2001 9:12 AM
+                                    </td>
+                                    <td>Flyer/Animated flyer/Facebook c…
+                                    </td>
+                                    <td class="data-complete">complete</td>
+                                    <td class="data-view"> <a href="#" class="view">view</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="data-id"><span>982</span></td>
+                                    <td>Dec 18, 2001 9:12 AM</td>
+                                    <td>Tim Holland timmie24@aol.com
+                                    </td>
+                                    <td>Sam Johnson Dec 18, 2001 9:12 AM
+                                    </td>
+                                    <td>Flyer/Animated flyer/Facebook c…
+                                    </td>
+                                    <td class="data-progress">In progress</td>
+                                    <td class="data-view"> <a href="#" class="assign">assign</a> <a href="#" class="view">view</a></td>
+                                </tr>
+                                <tr>
+                                    <td class="data-id"><span>983</span></td>
+                                    <td>Dec 18, 2001 9:12 AM</td>
+                                    <td>Tim Holland timmie24@aol.com
+                                    </td>
+                                    <td>Sam Johnson Dec 18, 2001 9:12 AM
+                                    </td>
+                                    <td>Flyer/Animated flyer/Facebook c…
+                                    </td>
+                                    <td class="data-new">new</td>
+                                    <td class="data-view"> <a href="#" class="assign">assign</a> <a href="#" class="view">view</a></td>
+                                </tr>
+
+                            </tbody>
+                        </thead>
+                    </table>
+                </div>
+
+                <nav class="mt-5">
+                    <ul class="data-pagination justify-content-center flex-wrap">
+                        <li>
+                            <a href="#" aria-label="First">First</a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="Previous">
+                                <span aria-hidden="true">&laquo;</span>
+                                <span class="sr-only">Previous</span>
+                            </a>
+                        </li>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li class="active"><a href="#">3</a></li>
+                        <li><a href="#">56</a></li>
+                        <li>
+                            <a href="#" aria-label="Next">
+                                <span aria-hidden="true">&raquo;</span>
+                                <span class="sr-only">Next</span></a>
+                        </li>
+                        <li>
+                            <a href="#" aria-label="First">Last</a>
+                        </li>
+                    </ul>
+                </nav>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo text-center mb-5">
+                <a href="index.html"><img src="images/footer-logo.png" class="img-fluid" alt=""></a>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>More information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Freelancing Blog</a></li>
+                        <li><a href="#">Free Flyer Templates</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 footer-lists categories mb-4">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">All Flyer Templates</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Business Flyers</a></li>
+                        <li><a href="#">Church Flyers</a></li>
+                        <li><a href="#">Club Flyers</a></li>
+                        <li><a href="#">Community Flyers</a></li>
+                        <li><a href="#">Free Flyers</a></li>
+                        <li><a href="#">Seasonal Flyers</a></li>
+                        <li><a href="#">Special Event Flyers</a></li>
+                        <li><a href="#">Sports Flyers</a></li>
+                        <li><a href="#">Vintage Flyer Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">F.A.Qs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">File Requirements</a></li>
+                        <li><a href="#">File Licenses</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="socket mt-5">
+
+                <div class="social-links mb-3">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <p id="copyright">Copyright &copy; 2018 All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/jquery.tablesorter.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

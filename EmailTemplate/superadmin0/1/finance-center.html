@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Finance Center | Flashy Flyers</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/datepicker.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header class="header-desktop">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light main-nav">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" class="img-fluid" alt=""></a>
+                <div class="ml-sm-auto cart-mobile">
+                    <div class="cart">
+                        <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                        <span class="cart-num">4</span>
+                    </div>
+                </div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+									<span class="navbar-toggler-icon"></span>
+								</button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Flyer Templates</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact us</a>
+                        </li>
+                    </ul>
+                    <div class="dropdown account-dropdown">
+                        <button class="btn btn-secondary dropdown-toggle" type="button" id="account-btn" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+												Account
+												</button>
+                        <div class="dropdown-menu" aria-labelledby="account-btn">
+                            <a class="dropdown-item" href="#">Downloads</a>
+                            <a class="dropdown-item" href="#">Settings</a>
+                            <a class="dropdown-item" href="#">History</a>
+                            <a class="dropdown-item" href="#">Logout</a>
+                        </div>
+                    </div>
+                    <div class="cart-desktop">
+                        <div class="cart">
+                            <a href="cart.html"><i class="fas fa-shopping-cart"></i></a>
+                            <span class="cart-num">4</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-content-wrap">
+        <div class="container">
+            <div class="main-content pl-60 pr-60 bx-shadow">
+                <h1 class="page-heading mb-4">Finance center</h1>
+                <form action="" class="top-search-options">
+                    <div class="d-flex justify-content-stretch flex-wrap">
+                        <div class="w-lg-20 w-100">
+                            <a href="#" class="btn-lg btn-block form-btn-grad">view all</a>
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control date-field" readonly data-toggle="datepicker" placeholder="start date">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <input type="text" class="form-control date-field" readonly data-toggle="datepicker" placeholder="end date">
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+																<option value="">product type</option>
+																<option value="">product type 1</option>
+																<option value="">product type 2</option>
+																<option value="">product type 3</option>
+																<option value="">product type 4</option>
+																<option value="">product type 5</option>
+																<option value="">product type 6</option>
+																<option value="">product type 7</option>
+															</select>
+                        </div>
+                        <div class="w-lg-20 w-100">
+                            <select name="" id="" class="form-control">
+																<option value="">product name</option>
+																<option value="">product 1</option>
+																<option value="">product 2</option>
+																<option value="">product 3</option>
+																<option value="">product 4</option>
+																<option value="">product 5</option>
+																<option value="">product 6</option>
+																<option value="">product 7</option>
+															</select>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-lg-8  col-lg-4">
+                            <button type="submit" class="form-btn-grad btn-lg btn-block">Search</button>
+                        </div>
+                    </div>
+                </form>
+                <section class="overall-totals mt-4 mb-5">
+                    <h2 class="blue mb-3">Overall totals</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box red">
+                                <p>Order</p>
+                                <h1>19,720</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box cyan">
+                                <p>Sales</p>
+                                <h1>$88,720</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box purple">
+                                <p>Customers</p>
+                                <h1>1167</h1>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-4">
+                            <div class="totals-box blue">
+                                <p>New orders</p>
+                                <h1>116</h1>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="totals-category mb-4">
+                    <h2 class="blue mb-3">Totals by category</h2>
+                    <div class="row">
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box cyan">
+                                <p>Flyers</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box purple">
+                                <p>Animated Flyers</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box red">
+                                <p>Laptop Skins</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box green">
+                                <p>Facebook covers</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box pink">
+                                <p>CD Covers</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-sm-6 mb-5">
+                            <div class="totals-brd-box brown">
+                                <p>Single covers</p>
+                                <h2>3652 <small>orders</small></h2>
+                                <h2>$23,404 <small>USD</small></h2>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <section class="totals-listing">
+                    <div class="row">
+                        <div class="col-lg-6 mb-4">
+                            <h2 class="blue mb-3">Totals by product</h2>
+                            <ol class="pt-3">
+                                <li><span class="li-num">#1</span> Night Club template 1 <span>(1119 sales, $45,097)</span></li>
+                                <li><span class="li-num">#2</span> DJ Logo Promo Animated <span>(1119 sales, $45,097)</span></li>
+                                <li><span class="li-num">#3</span>Night Club template 13 <span>(500 sales, $20,001)</span></li>
+                                <li><span class="li-num">#4</span> Laptop skin #12 <span>(442 sales, $19,097)</span></li>
+                                <li><span class="li-num">#5</span> Night Club template 5 <span>(354 sales, $15,090)</span></li>
+                                <li><span class="li-num">#6</span> Night Club template 1 <span>(200 sales, $1294)</span></li>
+                                <li><span class="li-num">#7</span> DJ Logo Promo <span>(156 sales, $997)</span></li>
+                                <li><span class="li-num">#8</span> Night Club template 13 <span>(112 sales, $845)</span></li>
+                                <li><span class="li-num">#9</span> Laptop skin #12 <span>(60 sales, $277)</span></li>
+                                <li><span class="li-num">#10</span> Night Club template 5 <span> (52 sales, $90) </span></li>
+                            </ol>
+                        </div>
+                        <div class="col-lg-6 mb-4">
+                            <h2 class="blue mb-3">Totals by client</h2>
+                            <ol class="pt-3">
+                                <li><span class="li-num">#1</span> Timmy Holland <span>(1119 orders, $15,097)</span></li>
+                                <li><span class="li-num">#2</span> Tyreese Gibson <span>(741 orders, $11,055) </span></li>
+                                <li><span class="li-num">#3</span> Marvin Gate <span>(500 orders, $10,001)</span></li>
+                                <li><span class="li-num">#4</span> Lashonda White <span>(442 orders, $9,097)</span></li>
+                                <li><span class="li-num">#5</span> Vickie Carpenter <span>(354 orders, $8,090)</span></li>
+                                <li><span class="li-num">#6</span> Ben Deck <span>(200 sales, $7294)</span></li>
+                                <li><span class="li-num">#7</span> Aaron Vikas <span>(156 orders, $6997)</span></li>
+                                <li><span class="li-num">#8</span> Manny Tim <span>(112 orders, $5845)</span></li>
+                                <li><span class="li-num">#9</span>Peter Johnson <span>(60 orders, $4277) </span></li>
+                                <li><span class="li-num">#10</span> Brenan Caria <span>(52 orders, $3090)</span></li>
+                            </ol>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+
+
+        </div>
+    </main>
+
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-logo text-center mb-5">
+                <a href="index.html"><img src="images/footer-logo.png" class="img-fluid" alt=""></a>
+            </div>
+
+            <div class="row">
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>More information</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Freelancing Blog</a></li>
+                        <li><a href="#">Free Flyer Templates</a></li>
+                        <li><a href="#">Sitemap</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-6 footer-lists categories mb-4">
+                    <h4>Categories</h4>
+                    <ul>
+                        <li><a href="#">All Flyer Templates</a></li>
+                        <li><a href="#">Bundles</a></li>
+                        <li><a href="#">Business Flyers</a></li>
+                        <li><a href="#">Church Flyers</a></li>
+                        <li><a href="#">Club Flyers</a></li>
+                        <li><a href="#">Community Flyers</a></li>
+                        <li><a href="#">Free Flyers</a></li>
+                        <li><a href="#">Seasonal Flyers</a></li>
+                        <li><a href="#">Special Event Flyers</a></li>
+                        <li><a href="#">Sports Flyers</a></li>
+                        <li><a href="#">Vintage Flyer Templates</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-md-3 footer-lists mb-4">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">F.A.Qs</a></li>
+                        <li><a href="#">Contact Support</a></li>
+                        <li><a href="#">File Requirements</a></li>
+                        <li><a href="#">File Licenses</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+            <div class="socket mt-5">
+
+                <div class="social-links mb-3">
+                    <a href="#" class="fb"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="twitter"><i class="fab fa-twitter"></i></a>
+                </div>
+
+                <p id="copyright">Copyright &copy; 2018 All rights reserved.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/datepicker.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
